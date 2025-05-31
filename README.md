@@ -1,9 +1,10 @@
-#Bank Loan Analysis & Interactive Dashboard
-##Introduction
+# Bank Loan Analysis & Interactive Dashboard
+
+## Introduction
 
 This project showcases a comprehensive analysis of bank loan data, sourced from Kaggle, visualized through an interactive Power BI dashboard. The primary objective is to delve into lending activities, understand applicant demographics, identify key trends in loan purposes, assess risk through loan status analysis (good vs. bad loans), and track financial performance metrics. This endeavor serves as a practical application of data analysis and visualization techniques for educational and demonstrative purposes, providing a clear view of the factors influencing the loan lifecycle.
 
-##Process of Dashboard Development
+## Process of Dashboard Development
 
 The creation of this insightful dashboard involved a multi-stage process:
 
@@ -14,25 +15,28 @@ The creation of this insightful dashboard involved a multi-stage process:
 3. Data Aggregation and KPI Calculation using SQL:
 The core metrics and aggregated views for the dashboard were derived using MS SQL Server. A series of SQL queries were executed to calculate Key Performance Indicators (KPIs) and segment the data. As detailed in the "MS SQL BANK LOAN QUERIES.docx" file, these queries included:
 
-Overall KPIs: Calculating total loan applications (38,576), total funded amount (approx. $435.8M), total amount received (approx. $473.1M), average interest rate (12.05%), and average Debt-to-Income (DTI) ratio (13.33%).
+## Overall KPIs
 
-Month-to-Date (MTD) and Previous Month-to-Date (PMTD) Metrics: Queries were designed to track performance for the current and previous months, enabling Month-over-Month (MoM) comparisons for loan applications, funded amounts, and received amounts. For instance, December 2021 saw 4,314 loan applications.
+1. Calculating total loan applications (38,576), total funded amount (approx. $435.8M), total amount received (approx. $473.1M), average interest rate (12.05%), and average Debt-to-Income (DTI) ratio (13.33%).
 
-Good vs. Bad Loan Analysis: SQL queries were used to segment loans into "Good Loans" (Fully Paid or Current) and "Bad Loans" (Charged Off). This involved calculating the percentage, number of applications, total funded amount, and total amount received for each category. For example, Good Loans constitute approximately 86% of applications, while Bad Loans are around 13-14%.
+2. Month-to-Date (MTD) and Previous Month-to-Date (PMTD) Metrics: Queries were designed to track performance for the current and previous months, enabling Month-over-Month (MoM) comparisons for loan applications, funded amounts, and received amounts. For instance, December 2021 saw 4,314 loan applications.
 
-Categorical Aggregations: Queries grouped data by various dimensions like loan status, month, state, loan term, employee length, purpose of the loan, and home ownership to provide data for the different charts and tables in the dashboard.
+3. Good vs. Bad Loan Analysis: SQL queries were used to segment loans into "Good Loans" (Fully Paid or Current) and "Bad Loans" (Charged Off). This involved calculating the percentage, number of applications, total funded amount, and total amount received for each category. For example, Good Loans constitute approximately 86% of applications, while Bad Loans are around 13-14%.
 
-##Dashboard Design and Visualization in Power BI:
+4. Categorical Aggregations: Queries grouped data by various dimensions like loan status, month, state, loan term, employee length, purpose of the loan, and home ownership to provide data for the different charts and tables in the dashboard.
+
+## Dashboard Design and Visualization in Power BI:
 The processed and aggregated data from SQL Server was then imported into Power BI. The dashboard was designed with user experience in mind, organizing information into logical sections:
 
-Summary Page: Presents high-level KPIs like total loan applications, total funded amount, total amount received, average interest rate, and average DTI, along with MTD figures and MoM changes. It also features a clear distinction between "Good Loans" and "Bad Loans" metrics.
+1. Summary Page: Presents high-level KPIs like total loan applications, total funded amount, total amount received, average interest rate, and average DTI, along with MTD figures and MoM changes. It also features a clear distinction between "Good Loans" and "Bad Loans" metrics.
 
-Overview Page: Provides visual breakdowns of loan applications by month, state, term, employee length, purpose, and home ownership, allowing for a deeper understanding of distribution patterns.
+2. Overview Page: Provides visual breakdowns of loan applications by month, state, term, employee length, purpose, and home ownership, allowing for a deeper understanding of distribution patterns.
 
-Details Page: Offers a granular view, likely a table listing individual or grouped loan details, including issue date, funded amount, interest rate, amount received, and installment amounts, which can be filtered by various criteria.
-Interactive elements such as slicers for GRADE, STATE, and GOOD VS BAD LOAN were incorporated to allow users to dynamically filter the data and explore specific segments.
+3. Details Page: Offers a granular view, likely a table listing individual or grouped loan details, including issue date, funded amount, interest rate, amount received, and installment amounts, which can be filtered by various criteria.
 
-##Key Insights from the Dashboard
+4. Interactive elements such as slicers for GRADE, STATE, and GOOD VS BAD LOAN were incorporated to allow users to dynamically filter the data and explore specific segments.
+
+## Key Insights from the Dashboard
 
 The dashboard reveals several significant insights into the bank loan portfolio:
 
@@ -58,10 +62,16 @@ Home Ownership: Applicants who are "Renting" (18K) or have a "Mortgage" (17K) co
 
 Loan Term: The 36-month term is overwhelmingly preferred, accounting for 73.2% of applications (28K), compared to 26.8% for 60-month terms (10K).
 
-##Risk Indicators:
+## Risk Indicators:
 
-When comparing "Fully Paid" loans to "Charged Off" loans:
+### When comparing "Fully Paid" loans to "Charged Off" loans:
 
-Interest Rates: Charged Off loans had a higher average interest rate (13.88%) compared to Fully Paid loans (11.64%).
+1. Interest Rates: Charged Off loans had a higher average interest rate (13.88%) compared to Fully Paid loans (11.64%).
 
-DTI: Charged Off loans also had a slightly higher average DTI (14.00%) compared to Fully Paid loans (13.17%). This suggests that higher interest rates and higher DTI ratios might be associated with increased risk of default.
+2. DTI: Charged Off loans also had a slightly higher average DTI (14.00%) compared to Fully Paid loans (13.17%). This suggests that higher interest rates and higher DTI ratios might be associated with increased risk of default.
+
+### When comparing "Fully Paid" loans to "Charged Off" loans:
+
+1. Interest Rates: Charged Off loans had a higher average interest rate (13.88%) compared to Fully Paid loans (11.64%).
+
+2. DTI: Charged Off loans also had a slightly higher average DTI (14.00%) compared to Fully Paid loans (13.17%). This suggests that higher interest rates and higher DTI ratios might be associated with increased risk of default.
