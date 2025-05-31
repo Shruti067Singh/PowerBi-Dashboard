@@ -9,12 +9,12 @@ This project showcases a comprehensive analysis of bank loan data, sourced from 
 The creation of this insightful dashboard involved a multi-stage process:
 
 1. Data Sourcing & Understanding: The foundational data, a Kaggle dataset representing bank loan applications and their statuses, was acquired. An initial review was conducted to understand the variables, data types, and potential areas for cleaning and transformation.
-### Dataset link: <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/BANK%20LOAN%20RAW%20DATA.csv">
+###  <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/BANK%20LOAN%20RAW%20DATA.csv"> Dataset link </a>
 
 3. Data Cleaning and Preparation (Conceptual - often in Excel/Power Query): While not explicitly detailed in the provided documents for Excel, typically, raw data like this would undergo cleaning. This might involve handling missing values, correcting data types (e.g., ensuring dates are recognized as dates, numerical values as numbers), removing duplicates, and standardizing categorical data for consistency. Power Query within Power BI is also a powerful tool for these steps.
 
 4. Data Aggregation and KPI Calculation using SQL:
-The core metrics and aggregated views for the dashboard were derived using MS SQL Server. A series of SQL queries were executed to calculate Key Performance Indicators (KPIs) and segment the data. As detailed in the MS Queries Doc link- <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/MS%20SQL%20BANK%20LOAN%20QUERIES.docx">, these queries included:
+The core metrics and aggregated views for the dashboard were derived using MS SQL Server. A series of SQL queries were executed to calculate Key Performance Indicators (KPIs) and segment the data. As detailed in the <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/MS%20SQL%20BANK%20LOAN%20QUERIES.docx">  MS Queries Doc link </a>, these queries included:
 
 - Calculating total loan applications (38,576), total funded amount (approx. $435.8M), total amount received (approx. $473.1M), average interest rate (12.05%), and average Debt-to-Income (DTI) ratio (13.33%).
   
@@ -26,7 +26,7 @@ The core metrics and aggregated views for the dashboard were derived using MS SQ
 
 ## Dashboard Design and Visualization in Power BI:
 The processed and aggregated data from SQL Server was then imported into Power BI. The dashboard was designed with user experience in mind, organizing information into logical sections:
-### Dashboard Link- <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/bank%20loan%20project(power%20BI).pdf">
+###  <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/bank%20loan%20project(power%20BI).pdf"> Dashboard Link </a>
 
 1. Summary Page: Presents high-level KPIs like total loan applications, total funded amount, total amount received, average interest rate, and average DTI, along with MTD figures and MoM changes. It also features a clear distinction between "Good Loans" and "Bad Loans" metrics.
 
