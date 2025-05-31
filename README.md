@@ -75,3 +75,11 @@ The dashboard reveals several significant insights into the bank loan portfolio:
 1. Interest Rates: Charged Off loans had a higher average interest rate (13.88%) compared to Fully Paid loans (11.64%).
 
 2. DTI: Charged Off loans also had a slightly higher average DTI (14.00%) compared to Fully Paid loans (13.17%). This suggests that higher interest rates and higher DTI ratios might be associated with increased risk of default.
+
+## DASHBOARD
+
+![Bank Loan Overview Dashboard](https://github.com/user-attachments/assets/eb2319ed-1f6c-47dd-a022-89521b46fabc)
+![Bank Loan Details DASHBOARD](https://github.com/user-attachments/assets/7315d9b6-048c-4f39-adea-f2f616c423f2)
+![Bank Loan Summary Dashboard](https://github.com/user-attachments/assets/0a112805-1c50-4f6e-a385-2d8aa51142f5)
+
+
