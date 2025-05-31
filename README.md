@@ -8,25 +8,25 @@ This project showcases a comprehensive analysis of bank loan data, sourced from 
 
 The creation of this insightful dashboard involved a multi-stage process:
 
-1. Data Sourcing & Understanding: The foundational data, a Kaggle dataset representing bank loan applications and their statuses, was acquired. An initial review was conducted to understand the variables, data types, and potential areas for cleaning and transformation. (The BANK LOAN RAW DATA.csv provides the raw structure of this data).
+1. Data Sourcing & Understanding: The foundational data, a Kaggle dataset representing bank loan applications and their statuses, was acquired. An initial review was conducted to understand the variables, data types, and potential areas for cleaning and transformation.
+### Dataset link: <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/BANK%20LOAN%20RAW%20DATA.csv">
 
-2. Data Cleaning and Preparation (Conceptual - often in Excel/Power Query): While not explicitly detailed in the provided documents for Excel, typically, raw data like this would undergo cleaning. This might involve handling missing values, correcting data types (e.g., ensuring dates are recognized as dates, numerical values as numbers), removing duplicates, and standardizing categorical data for consistency. Power Query within Power BI is also a powerful tool for these steps.
+3. Data Cleaning and Preparation (Conceptual - often in Excel/Power Query): While not explicitly detailed in the provided documents for Excel, typically, raw data like this would undergo cleaning. This might involve handling missing values, correcting data types (e.g., ensuring dates are recognized as dates, numerical values as numbers), removing duplicates, and standardizing categorical data for consistency. Power Query within Power BI is also a powerful tool for these steps.
 
-3. Data Aggregation and KPI Calculation using SQL:
-The core metrics and aggregated views for the dashboard were derived using MS SQL Server. A series of SQL queries were executed to calculate Key Performance Indicators (KPIs) and segment the data. As detailed in the "MS SQL BANK LOAN QUERIES.docx" file, these queries included:
+4. Data Aggregation and KPI Calculation using SQL:
+The core metrics and aggregated views for the dashboard were derived using MS SQL Server. A series of SQL queries were executed to calculate Key Performance Indicators (KPIs) and segment the data. As detailed in the MS Queries Doc link- <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/MS%20SQL%20BANK%20LOAN%20QUERIES.docx">, these queries included:
 
-## Overall KPIs
+- Calculating total loan applications (38,576), total funded amount (approx. $435.8M), total amount received (approx. $473.1M), average interest rate (12.05%), and average Debt-to-Income (DTI) ratio (13.33%).
+  
+- Month-to-Date (MTD) and Previous Month-to-Date (PMTD) Metrics: Queries were designed to track performance for the current and previous months, enabling Month-over-Month (MoM) comparisons for loan applications, funded amounts, and received amounts. For instance, December 2021 saw 4,314 loan applications.
 
-1. Calculating total loan applications (38,576), total funded amount (approx. $435.8M), total amount received (approx. $473.1M), average interest rate (12.05%), and average Debt-to-Income (DTI) ratio (13.33%).
-
-2. Month-to-Date (MTD) and Previous Month-to-Date (PMTD) Metrics: Queries were designed to track performance for the current and previous months, enabling Month-over-Month (MoM) comparisons for loan applications, funded amounts, and received amounts. For instance, December 2021 saw 4,314 loan applications.
-
-3. Good vs. Bad Loan Analysis: SQL queries were used to segment loans into "Good Loans" (Fully Paid or Current) and "Bad Loans" (Charged Off). This involved calculating the percentage, number of applications, total funded amount, and total amount received for each category. For example, Good Loans constitute approximately 86% of applications, while Bad Loans are around 13-14%.
-
-4. Categorical Aggregations: Queries grouped data by various dimensions like loan status, month, state, loan term, employee length, purpose of the loan, and home ownership to provide data for the different charts and tables in the dashboard.
+- Good vs. Bad Loan Analysis: SQL queries were used to segment loans into "Good Loans" (Fully Paid or Current) and "Bad Loans" (Charged Off). This involved calculating the percentage, number of applications, total funded amount, and total amount received for each category. For example, Good Loans constitute approximately 86% of applications, while Bad Loans are around 13-14%.
+  
+- Categorical Aggregations: Queries grouped data by various dimensions like loan status, month, state, loan term, employee length, purpose of the loan, and home ownership to provide data for the different charts and tables in the dashboard.
 
 ## Dashboard Design and Visualization in Power BI:
 The processed and aggregated data from SQL Server was then imported into Power BI. The dashboard was designed with user experience in mind, organizing information into logical sections:
+### Dashboard Link- <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/bank%20loan%20project(power%20BI).pdf">
 
 1. Summary Page: Presents high-level KPIs like total loan applications, total funded amount, total amount received, average interest rate, and average DTI, along with MTD figures and MoM changes. It also features a clear distinction between "Good Loans" and "Bad Loans" metrics.
 
@@ -46,21 +46,21 @@ The dashboard reveals several significant insights into the bank loan portfolio:
 
 3. Loan Quality:
 
-A significant majority (86.2%) of loans are categorized as "Good Loans" (33.2K applications, $370.2M funded, $435.8M received).
+- A significant majority (86.2%) of loans are categorized as "Good Loans" (33.2K applications, $370.2M funded, $435.8M received).
 
-"Bad Loans" (Charged Off) account for 13.8% of the portfolio (5.3K applications, $65.5M funded, $37.3M received). This indicates that while most loans perform well, a notable portion results in losses.
+- "Bad Loans" (Charged Off) account for 13.8% of the portfolio (5.3K applications, $65.5M funded, $37.3M received). This indicates that while most loans perform well, a notable portion results in losses.
 
 4. Loan Characteristics & Distribution:
 
-Monthly Trends: Loan applications peak towards the end of the year, with December showing the highest volume (4.3K applications in the visualized data).
+- Monthly Trends: Loan applications peak towards the end of the year, with December showing the highest volume (4.3K applications in the visualized data).
 
-Purpose of Loan: "Debt consolidation" is the most common reason for loan applications (18K), followed by "credit card" refinancing (5K) and "other" (4K).
+- Purpose of Loan: "Debt consolidation" is the most common reason for loan applications (18K), followed by "credit card" refinancing (5K) and "other" (4K).
 
-Applicant Profile (Employee Length): Applicants with "10+ years" of employment form the largest group (8.9K applications).
+- Applicant Profile (Employee Length): Applicants with "10+ years" of employment form the largest group (8.9K applications).
 
-Home Ownership: Applicants who are "Renting" (18K) or have a "Mortgage" (17K) constitute the majority of loan seekers.
+- Home Ownership: Applicants who are "Renting" (18K) or have a "Mortgage" (17K) constitute the majority of loan seekers.
 
-Loan Term: The 36-month term is overwhelmingly preferred, accounting for 73.2% of applications (28K), compared to 26.8% for 60-month terms (10K).
+- Loan Term: The 36-month term is overwhelmingly preferred, accounting for 73.2% of applications (28K), compared to 26.8% for 60-month terms (10K).
 
 ## Risk Indicators:
 
