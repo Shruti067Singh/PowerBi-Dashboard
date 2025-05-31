@@ -9,7 +9,7 @@ This project showcases a comprehensive analysis of bank loan data, sourced from 
 The creation of this insightful dashboard involved a multi-stage process:
 
 1. Data Sourcing & Understanding: The foundational data, a Kaggle dataset representing bank loan applications and their statuses, was acquired. An initial review was conducted to understand the variables, data types, and potential areas for cleaning and transformation.
-###  <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/BANK%20LOAN%20RAW%20DATA.csv"> Dataset link </a>
+<a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/BANK%20LOAN%20RAW%20DATA.csv"> Dataset link </a>
 
 3. Data Cleaning and Preparation (Conceptual - often in Excel/Power Query): While not explicitly detailed in the provided documents for Excel, typically, raw data like this would undergo cleaning. This might involve handling missing values, correcting data types (e.g., ensuring dates are recognized as dates, numerical values as numbers), removing duplicates, and standardizing categorical data for consistency. Power Query within Power BI is also a powerful tool for these steps.
 
