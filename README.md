@@ -26,7 +26,7 @@ The core metrics and aggregated views for the dashboard were derived using MS SQ
 
 ## Dashboard Design and Visualization in Power BI:
 The processed and aggregated data from SQL Server was then imported into Power BI. The dashboard was designed with user experience in mind, organizing information into logical sections:
-###  <a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/bank%20loan%20project(power%20BI).pdf"> Dashboard Link </a>
+<a href= "https://github.com/Shruti067Singh/PowerBi-Dashboard/blob/main/bank%20loan%20project(power%20BI).pdf"> Dashboard Link </a>
 
 1. Summary Page: Presents high-level KPIs like total loan applications, total funded amount, total amount received, average interest rate, and average DTI, along with MTD figures and MoM changes. It also features a clear distinction between "Good Loans" and "Bad Loans" metrics.
 
